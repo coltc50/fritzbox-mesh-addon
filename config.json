@@ -1,0 +1,24 @@
+{
+  "name": "FritzBox Mesh Addon",
+  "version": "1.0.0",
+  "slug": "fritzbox_mesh",
+  "description": "FritzBox Mesh Topology Reader for Home Assistant",
+  "startup": "services",
+  "boot": "auto",
+  "webui": "http://[HOST]:5000",
+  "host_network": true,
+  "ingress": false,
+  "options": {
+    "fritz_ip": "192.168.176.1",
+    "username": "",
+    "password": "",
+    "poll_interval": 60
+  },
+  "schema": {
+    "fritz_ip": "str",
+    "username": "str",
+    "password": "str",
+    "poll_interval": "int"
+  },
+  "image": "local/fritzbox-mesh-addon"
+}
